@@ -10,4 +10,7 @@ app.get("/api/users", (req, res) => {
   })
 })
 
+// Routes
+app.use("/api/users", require("./routes/userRoutes"))
+
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
